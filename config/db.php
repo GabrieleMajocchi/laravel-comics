@@ -52,15 +52,15 @@ return [
     ],
 
     "sites" => [
-        ["ref" => "DC",
+        ["ref" => "homepage",
         "name" => "DC"],
-        ["ref" => "MAD Magazine",
+        ["ref" => "homepage",
         "name" => "MAD Magazine"],
-        ["ref" => "DC Kids",
+        ["ref" => "homepage",
         "name" => "DC Kids"],
-        ["ref" => "Dc Universe",
+        ["ref" => "homepage",
         "name" => "Dc Universe"],
-        ["ref" => "DC Power Visa",
+        ["ref" => "homepage",
         "name" => "DC Power Visa"],
     ],
 
