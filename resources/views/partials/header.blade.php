@@ -1,7 +1,7 @@
 <header class="d-flex">
     <div class="d-flex align-items-center m-auto justify-content-around my-3 w-75">
         <img src="../assets/img/dc-logo.png" alt="">
-        <ul class="m-auto d-flex">
+        <ul class="m-auto d-flex navlink">
 
             @foreach ($links as $link)
                 <li class="position-relative">

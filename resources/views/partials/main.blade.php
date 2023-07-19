@@ -17,23 +17,23 @@
     </div>
     <div class="blubox d-flex align-item-center justify-content-center">
         <div class="element d-flex align-items-center px-5">
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+            <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="">
             <p>DIGITAL COMICS</p>
         </div>
         <div class="element d-flex align-items-center px-5">
-            <img src="../assets/img/buy-comics-merchandise.png" alt="">
+            <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png')}}" alt="">
             <p>DC MERCHANDISE</p>
         </div>
         <div class="element d-flex align-items-center px-5">
-            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+            <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png')}}" alt="">
             <p>SUBSCRIPTION</p>
         </div>
         <div class="element d-flex align-items-center px-5">
-            <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+            <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png')}}" alt="">
             <p>COMIC SHOP LOCATOR</p>
         </div>
         <div class="element d-flex align-items-center px-5">
-            <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+            <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg')}}" alt="">
             <p>DC POWER VISA</p>
         </div>
     </div>
