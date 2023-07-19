@@ -1,4 +1,9 @@
-<main class="">
+@extends('layouts.app')
+
+@section('title', 'Homepage')
+
+@section('main-content')
+
     <div class="jumbotron"></div>
     <div class="products">
         <div class="box m-auto w-75 d-flex align-item-center justify-content-between flex-wrap position-relative">
@@ -37,4 +42,6 @@
             <p>DC POWER VISA</p>
         </div>
     </div>
-</main>
+
+
+@endsection

@@ -60,7 +60,7 @@ main{
     .jumbotron{
         width: 100%;
         height: 400px;
-        background-image: url('../assets/img/jumbotron.jpg');
+        background-image: url('../img/jumbotron.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -78,34 +78,34 @@ main{
         position: absolute;
         font-size: 1.5rem;
         top: -30px;
+    }
 
-        .comics{
-            width: calc(100% / 6 - 1rem);
-            color: $textWhite;
-            margin: 3rem 1rem 0 0;
-            position: relative;
-            cursor: pointer;
-            &:hover img{
-                opacity: 0.2;
-            }
-            span{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                translate: (-50% -50%);
-                display: none;
-                z-index: 1;
-            }
-            &:hover span{
-                display: block;
-            }
+    .comics{
+        width: calc(100% / 6 - 1rem);
+        color: $textWhite;
+        margin: 3rem 1rem 0 0;
+        position: relative;
+        cursor: pointer;
+        &:hover img{
+            opacity: 0.2;
         }
-        .comics img{
-            width: 100%;
-            aspect-ratio: 1;
-            object-fit: cover;
-            object-position: top;
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: (-50% -50%);
+            display: none;
+            z-index: 1;
         }
+        &:hover span{
+            display: block;
+        }
+    }
+    .comics img{
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: top;
     }
 
     .load-more:hover{
@@ -135,7 +135,7 @@ footer{
     background-color: $bgFooter;
 
     .background{
-        background-image: url(../assets/img/footer-bg.jpg);
+        background-image: url(../img/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -164,7 +164,7 @@ footer{
             }
         }
         .dc{
-            background-image: url(../assets/img/dc-logo-bg.png);
+            background-image: url(../img/dc-logo-bg.png);
             width: 700px;
             height: 700px;
             background-repeat: no-repeat;

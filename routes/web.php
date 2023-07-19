@@ -19,5 +19,5 @@ Route::get('/', function () {
     $sites = config('db.sites');
     $comics = config('db.comics');
 
-    return view('layouts.app', compact('links', 'dc', 'sites', 'comics'));
+    return view('home', compact('links', 'dc', 'sites', 'comics'));
 })->name('homepage');
