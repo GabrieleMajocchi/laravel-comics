@@ -7,7 +7,7 @@
                 <ul>
                 @foreach ($links as $section)
                     <li>
-                        <a href="{{$section['ref']}}">{{$section['name']}}</a>
+                        <a href="{{route($section['ref'])}}">{{$section['name']}}</a>
                     </li>
                 @endforeach
                 </ul>
@@ -27,7 +27,7 @@
                 <ul>
                 @foreach ($dc as $section)
                     <li>
-                        <a href="{{$section['ref']}}">{{$section['name']}}</a>
+                        <a href="{{route($section['ref'])}}">{{$section['name']}}</a>
                     </li>
                 @endforeach
                 </ul>
@@ -38,7 +38,7 @@
                 <ul>
                 @foreach ($sites as $section)
                     <li>
-                        <a href="{{$section['ref']}}">{{$section['name']}}</a>
+                        <a href="{{route($section['ref'])}}">{{$section['name']}}</a>
                     </li>
                 @endforeach
                 </ul>
