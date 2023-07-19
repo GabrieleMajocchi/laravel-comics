@@ -4,13 +4,13 @@
         <div class="box m-auto w-75 d-flex align-item-center justify-content-between flex-wrap position-relative">
             <div class="current-series fw-bold">CURRENT SERIES</div>
 
-            <!-- DA FARE CON FOREACH -->
-            <SingleComics v-for="comics in currentseries" :comicslist="comics"/>>
-            <div class="comics">
-                <span class="fw-bold fs-2">{{comicslist.price}}</span>
-                <img :src="comicslist.thumb" :alt="comicslist.series">
-                <p class="comics-title">{{(comicslist.series).toUpperCase()}}</p>
-            </div>
+            @foreach ($comics as $comic)
+                <div class="comics">
+                    <span class="fw-bold fs-2">{{$comic['price']}}</span>
+                    <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                    <p class="comics-title">{{$comic['series']}}</p>
+                </div>
+            @endforeach
 
             <a href="#" class="load-more fw-bold m-auto">LOAD MORE</a>
         </div>

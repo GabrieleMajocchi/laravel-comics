@@ -2,13 +2,13 @@
     <div class="d-flex align-items-center m-auto justify-content-around my-3 w-75">
         <img src="../assets/img/dc-logo.png" alt="">
         <ul class="m-auto d-flex">
-            
-                <!-- DA FARE CON FOREACH -->
-                <NavLink v-for="link in links" :link="link"/>
+
+            @foreach ($links as $link)
                 <li class="position-relative">
-                    <a class="fw-bold" :href="link.ref">{{(link.name).toUpperCase()}}</a>
+                    <a class="fw-bold" href="{{route($link['ref'])}}">{{$link['name']}}</a>
                     <div class="blubox"></div>
                 </li>
+            @endforeach
 
         </ul>
     </div>

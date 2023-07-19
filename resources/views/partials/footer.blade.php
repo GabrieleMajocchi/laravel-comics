@@ -4,10 +4,12 @@
 
             <div class="link-section">
                 <h3>DC COMICS</h3>
-                <ul v-for="section in dcComics">
+                <ul>
+                @foreach ($links as $section)
                     <li>
-                        <a :href="section.ref">{{ section.name }}</a>
+                        <a href="{{$section['ref']}}">{{$section['name']}}</a>
                     </li>
+                @endforeach
                 </ul>
                 <h3>SHOP</h3>
                 <ul>
@@ -22,26 +24,30 @@
 
             <div class="link-section">
                 <h3>DC</h3>
-                <ul v-for="section in dc">
+                <ul>
+                @foreach ($dc as $section)
                     <li>
-                        <a :href="section.ref">{{ section.name }}</a>
+                        <a href="{{$section['ref']}}">{{$section['name']}}</a>
                     </li>
+                @endforeach
                 </ul>
             </div>
 
             <div class="link-section">
                 <h3>SITES</h3>
-                <ul v-for="section in sites">
+                <ul>
+                @foreach ($sites as $section)
                     <li>
-                        <a :href="section.ref">{{ section.name }}</a>
+                        <a href="{{$section['ref']}}">{{$section['name']}}</a>
                     </li>
+                @endforeach
                 </ul>
             </div>
 
             <div class="dc position-absolute"></div>
         </div>
     </div>
-    
+
     <div class="lower-footer  d-flex w-75 m-auto position-relative align-items-center justify-content-between">
         <div class="button">
             <a href="#" class="fw-bold">SIGN-UP NOW!</a>
